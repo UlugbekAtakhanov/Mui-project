@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { Stack, TextField, Box } from '@mui/material';
-import { EmojiEmotionsOutlined, Image, PersonAdd, VideoCameraBack } from '@mui/icons-material';
+import { EmojiEmotionsOutlined, Image as ImageIcon, PersonAdd, VideoCameraBack } from '@mui/icons-material';
 import MuiAlert from './MuiAlert';
 
 const style = {
@@ -37,7 +37,7 @@ export default function BasicModal({modalOpen, setModalOpen}) {
           <TextField fullWidth id="standard-basic" label="Add post" variant="standard" />
           <Stack direction = "row" spacing = ".7rem" sx = {{marginTop: "1rem"}}>
             <EmojiEmotionsOutlined color = "secondary" />
-            <Image color = "info" />
+            <ImageIcon color = "info" />
             <VideoCameraBack color = "error" />
             <PersonAdd color = "warning" />
           </Stack>
