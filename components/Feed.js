@@ -56,7 +56,7 @@ const itemData = [
 const Feed = () => {
   return (
     <Box sx = {{padding: "1.5rem", flex: {xs: 8, sm: 4}}}>
-      {itemData.map(item => <Posts image = {item.img} />)}
+      {itemData.map(item => <Posts key = {item.title} image = {item.img} />)}
     </Box>
   )
 }
